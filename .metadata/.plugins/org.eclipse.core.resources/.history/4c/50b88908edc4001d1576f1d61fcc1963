@@ -1,0 +1,75 @@
+package com.acknowledgement.entity;
+
+public class OrderItems {
+
+	private Integer orditemId;
+
+	private Integer productNo;
+
+	private String productName;
+
+	private String productQuantity;
+
+	private Double productPrice;
+
+	public OrderItems() {
+		super();
+
+	}
+
+	public OrderItems(Integer orditemId, Integer productNo, String productName, String productQuantity,
+			Double productPrice) {
+		super();
+		this.orditemId = orditemId;
+		this.productNo = productNo;
+		this.productName = productName;
+		this.productQuantity = productQuantity;
+		this.productPrice = productPrice;
+	}
+
+	public Integer getOrditemId() {
+		return orditemId;
+	}
+
+	public void setOrditemId(Integer orditemId) {
+		this.orditemId = orditemId;
+	}
+
+	public Integer getProductNo() {
+		return productNo;
+	}
+
+	public void setProductNo(Integer productNo) {
+		this.productNo = productNo;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getProductQuantity() {
+		return productQuantity;
+	}
+
+	public void setProductQuantity(String productQuantity) {
+		this.productQuantity = productQuantity;
+	}
+
+	public Double getProductPrice() {
+		return productPrice;
+	}
+
+	public void setProductPrice(Double productPrice) {
+		this.productPrice = productPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderItems [orditemId=" + orditemId + ", productNo=" + productNo + ", productName=" + productName
+				+ ", productQuantity=" + productQuantity + ", productPrice=" + productPrice + "]";
+	}
+}

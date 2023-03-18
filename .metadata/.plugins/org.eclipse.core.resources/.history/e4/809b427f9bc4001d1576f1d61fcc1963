@@ -1,0 +1,19 @@
+package com.acknowledgement.entity;
+
+import java.time.LocalDate;
+
+public class OrderHeader  {
+
+	private int productId;
+
+	private String productName;
+
+	private LocalDate purchaseDate; 
+	
+	private IteamsProduct iteams;
+	
+	private Address address;
+
+	
+}
+	

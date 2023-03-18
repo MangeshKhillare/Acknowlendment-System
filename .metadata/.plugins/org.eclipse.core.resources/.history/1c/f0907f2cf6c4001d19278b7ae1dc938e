@@ -1,0 +1,26 @@
+package com.acknowledgement.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="OrderHeaderDBSave")
+public class OrderHeaderDBSave {
+
+	private Integer orderId;
+
+	private String userName;
+
+	private String userMobileNo;
+
+	private String purchaseOrderNo;
+
+	private LocalDate purchaseOrderDate;
+
+	private OrderItems orderItems;
+
+	private Address address;
+
+}

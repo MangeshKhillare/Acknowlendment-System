@@ -1,0 +1,101 @@
+package com.acknowledgement.entity;
+
+import java.time.LocalDate;
+
+public class OrderHeader {
+
+	private Integer orderId;
+
+	private String userName;
+
+	private String userMobileNo;
+
+	private String purchaseOrderNo;
+
+	private LocalDate purchaseOrderDate;
+
+	private OrderItems orderItems;
+
+	private Address address;
+
+	public OrderHeader() {
+		super();
+
+	}
+
+	public OrderHeader(Integer orderId, String userName, String userMobileNo, String purchaseOrderNo,
+			LocalDate purchaseOrdDate, OrderItems orderItems, Address address) {
+		super();
+		this.orderId = orderId;
+		this.userName = userName;
+		this.userMobileNo = userMobileNo;
+		this.purchaseOrderNo = purchaseOrderNo;
+		this.purchaseOrderDate = purchaseOrdDate;
+		this.orderItems = orderItems;
+		this.address = address;
+	}
+
+	public Integer getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(Integer orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserMobileNo() {
+		return userMobileNo;
+	}
+
+	public void setUserMobileNo(String userMobileNo) {
+		this.userMobileNo = userMobileNo;
+	}
+
+	public String getPurchaseOrderNo() {
+		return purchaseOrderNo;
+	}
+
+	public void setPurchaseOrderNo(String purchaseOrderNo) {
+		this.purchaseOrderNo = purchaseOrderNo;
+	}
+
+	public LocalDate getPurchaseOrdDate() {
+		return purchaseOrderDate;
+	}
+
+	public void setPurchaseOrdDate(LocalDate purchaseOrdDate) {
+		this.purchaseOrderDate = purchaseOrdDate;
+	}
+
+	public OrderItems getOrderItems() {
+		return orderItems;
+	}
+
+	public void setOrderItems(OrderItems orderItems) {
+		this.orderItems = orderItems;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderHeader [orderId=" + orderId + ", userName=" + userName + ", userMobileNo=" + userMobileNo
+				+ ", purchaseOrderNo=" + purchaseOrderNo + ", purchaseOrdDate=" + purchaseOrderDate + ", orderItems="
+				+ orderItems + ", address=" + address + "]";
+	}
+
+}

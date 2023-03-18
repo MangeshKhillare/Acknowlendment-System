@@ -1,0 +1,22 @@
+package com.acknowledgement.service;
+
+import org.springframework.stereotype.Service;
+
+import com.acknowledgement.entity.OrderHeader;
+import com.acknowledgement.repository.AddressRepository;
+import com.acknowledgement.repository.OrderHeaderRepository;
+
+@Service
+public class OrderServiceImpl implements OrderServiceI {
+
+	private OrderHeaderRepository orderHeaderRepository;
+
+	private AddressRepository addressRepository;
+
+	@Override
+	public OrderHeader addOrder(OrderHeader orderHeader) {
+
+		return null;
+	}
+
+}

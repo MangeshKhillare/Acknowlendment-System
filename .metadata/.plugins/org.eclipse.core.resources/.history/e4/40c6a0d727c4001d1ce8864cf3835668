@@ -1,0 +1,19 @@
+package com.acknowledgement.entity;
+
+import java.time.LocalDate;
+
+public class OrderHeder {
+	
+	private int productId;
+	
+	private String productName;
+	
+	private LocalDate purchaseDate;
+
+	public OrderHeder() {
+		super();
+		
+	}
+
+	
+}

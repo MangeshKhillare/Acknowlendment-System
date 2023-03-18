@@ -1,0 +1,22 @@
+package com.acknowledgement.restcontroller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.acknowledgement.service.OrderServiceI;
+
+@RestController
+public class ServiceController {
+
+	@Autowired
+	private OrderServiceI orderServiceI;
+
+	@PostMapping("/saveorder")
+	public orderHeader saveorder(@RequestBody orderHeader oheader) {
+		
+		orderHeader addorder = orderSer.addorder(oheader);
+		
+		return addorder;
+		
+	}
+}

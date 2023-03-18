@@ -1,0 +1,12 @@
+package com.acknowledgement.service;
+
+import org.springframework.stereotype.Service;
+
+import com.acknowledgement.entity.OrderHeader;
+
+@Service
+public interface OrderServiceI {
+
+	public OrderHeader addOrder(OrderHeader orderHeader);
+
+}

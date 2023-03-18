@@ -1,0 +1,12 @@
+package com.acknowledgement.entity;
+
+
+public class OrderHeder {
+	
+	private int productId;
+	
+	private String productName;
+	
+	
+
+}

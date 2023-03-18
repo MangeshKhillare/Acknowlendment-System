@@ -1,0 +1,59 @@
+package com.acknowledgement.entity;
+
+import java.time.LocalDate;
+
+public class OrderHeader  {
+
+	private int productId;
+
+	private String productName;
+
+	private LocalDate purchaseDate; 
+	
+	private IteamsProduct iteams;
+	
+	private Address address;
+
+	public OrderHeder() {
+		super();
+
+	}
+
+	public OrderHeder(int productId, String productName, LocalDate purchaseDate) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.purchaseDate = purchaseDate;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public LocalDate getPurchaseDate() {
+		return purchaseDate;
+	}
+
+	public void setPurchaseDate(LocalDate purchaseDate) {
+		this.purchaseDate = purchaseDate;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderHeder [productId=" + productId + ", productName=" + productName + ", purchaseDate=" + purchaseDate
+				+ "]";
+	}
+
+}
